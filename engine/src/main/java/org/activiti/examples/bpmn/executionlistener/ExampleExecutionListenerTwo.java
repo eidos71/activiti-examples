@@ -23,7 +23,12 @@ import org.activiti.engine.delegate.ExecutionListener;
  */
 public class ExampleExecutionListenerTwo implements ExecutionListener {
 
-  public void notify(DelegateExecution execution) throws Exception {
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5514180524757551782L;
+
+public void notify(DelegateExecution execution) throws Exception {
     execution.setVariable("variableSetInExecutionListener", "secondValue");
     execution.setVariable("eventNameReceived", execution.getEventName());
   }

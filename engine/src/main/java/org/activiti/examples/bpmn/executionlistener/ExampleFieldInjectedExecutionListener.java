@@ -24,7 +24,12 @@ import org.activiti.engine.delegate.Expression;
  */
 public class ExampleFieldInjectedExecutionListener implements ExecutionListener {
 
-  private Expression fixedValue;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3242844549473028920L;
+
+private Expression fixedValue;
 
   private Expression dynamicValue;
 

@@ -22,9 +22,13 @@ import java.io.Serializable;
  */
 public class ExampleExecutionListenerPojo implements Serializable {
 
-  private static final long serialVersionUID = 1L;
 
-  private String receivedEventName;
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5821235803519029580L;
+private String receivedEventName;
   
   public void myMethod(String eventName) {
     this.receivedEventName = eventName;
