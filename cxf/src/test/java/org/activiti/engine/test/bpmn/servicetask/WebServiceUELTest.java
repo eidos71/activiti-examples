@@ -33,12 +33,12 @@ public class WebServiceUELTest extends AbstractWebServiceTaskTest {
   @Deployment
   public void testWebServiceInvocationWithDataFlowUEL() throws Exception {
     ProcessDefinitionEntity processDefinition = processEngineConfiguration
-      .getCommandExecutorTxRequiresNew()
+      .getCommandExecutor()
       .execute(new Command<ProcessDefinitionEntity>() {
         public ProcessDefinitionEntity execute(CommandContext commandContext) {
           return Context
             .getProcessEngineConfiguration()
-            .getDeploymentCache()
+            .getDeploymentManager()
             .findDeployedLatestProcessDefinitionByKey("webServiceInvocationWithDataFlowUEL");
         }
       });

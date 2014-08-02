@@ -13,7 +13,7 @@
 package org.activiti.engine.test.bpmn.servicetask;
 
 import org.activiti.engine.impl.test.PluggableActivitiTestCase;
-import org.activiti.engine.impl.util.LogUtil;
+
 import org.activiti.engine.impl.webservice.Counter;
 import org.activiti.engine.impl.webservice.CounterImpl;
 import org.apache.cxf.endpoint.Server;
@@ -27,10 +27,7 @@ import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 public abstract class AbstractWebServiceTaskTest extends
 		PluggableActivitiTestCase {
 
-	static {
-		LogUtil.readJavaUtilLoggingConfigFromClasspath();
-	}
-
+	
 	protected Counter counter;
 	private Server server;
 

@@ -9,13 +9,13 @@
     <packaging>pom</packaging>
     
     <properties>
-        <activiti.version>5.7</activiti.version>
+        <activiti.version>5.16</activiti.version>
         
         <spring.version>3.0.6.RELEASE</spring.version>
         <cglib.version>2.2.2</cglib.version>
 
-        <logback.version>0.9.29</logback.version>
-        <slf4j.version>1.6.2</slf4j.version>
+        <logback.version>1.1.2</logback.version>
+        <slf4j.version>1.7.7</slf4j.version>
         
         <groovy.version>1.7.5</groovy.version>
 
